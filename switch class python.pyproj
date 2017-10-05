@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{189eed5b-3d48-491c-a6b9-fbac794839b3}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>alternate name game by teacher.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="alternate name game by teacher.py" />
+    <Compile Include="area of square code.py" />
+    <Compile Include="area of square function.py" />
+    <Compile Include="brutforce root.py" />
+    <Compile Include="bubble sort.py" />
+    <Compile Include="case converter.py" />
+    <Compile Include="first function.py" />
+    <Compile Include="fixed word_game2.py" />
+    <Compile Include="full extract list.py" />
+    <Compile Include="Hang Man.py" />
+    <Compile Include="hang-man.py" />
+    <Compile Include="list loop funtion.py" />
+    <Compile Include="main-hang-man-tester.py" />
+    <Compile Include="my first program.py" />
+    <Compile Include="my new name game trial.py" />
+    <Compile Include="name age acc .py" />
+    <Compile Include="name game 2 teacher.py" />
+    <Compile Include="name game python.py" />
+    <Compile Include="NEW HANG MAN.py" />
+    <Compile Include="new.py" />
+    <Compile Include="newaa.py" />
+    <Compile Include="Pythagoras theorem.py" />
+    <Compile Include="python-code\area of square code.py" />
+    <Compile Include="python-code\area of square function.py" />
+    <Compile Include="python-code\conditional loop code.py" />
+    <Compile Include="python-code\first function.py" />
+    <Compile Include="python-code\my first program.py" />
+    <Compile Include="python-code\test math func.py" />
+    <Compile Include="switchng_python-master\banking_transaction.py" />
+    <Compile Include="switchng_python-master\CreditcardRepaymentCalculator.py" />
+    <Compile Include="switchng_python-master\object oriented programming.py" />
+    <Compile Include="switchng_python-master\polynomial by James.py" />
+    <Compile Include="switchng_python-master\problem set II part 2 using bisection.py" />
+    <Compile Include="switchng_python-master\ps2_hangman  working.py" />
+    <Compile Include="switchng_python-master\Reading and writing to a file.py" />
+    <Compile Include="test math func.py" />
+    <Compile Include="triangle test lect.py" />
+    <Compile Include="variable scope test.py" />
+    <Compile Include="word_game2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="switchng_python-master\words.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="python-code" />
+    <Folder Include="switchng_python-master" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
