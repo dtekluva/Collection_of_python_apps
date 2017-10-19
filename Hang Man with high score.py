@@ -220,11 +220,13 @@ def play_game(game_count):
             print(username," You played " ,game_count,"Games."," Total score |>>> ",score)
             score_writer(username,score)
             print("\n\n GOODBYE ",username," COME BACK SOON")
+            input()
             exit
     else:
         score=score*game_count
         score_writer(username,score)
         print("\n\nGOODBYE ",username," COME BACK SOON."," Total score |>>> ",score)
+        input()
         exit
 
 play_game(game_count)

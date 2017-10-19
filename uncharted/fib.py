@@ -9,6 +9,3 @@ def fib_guy(start,size):
     return fib_list
 
 print(fib_guy(int(input("\n please enter a Start int : ")),int(input("\n please enter an End int : "))))
-
-
-  
