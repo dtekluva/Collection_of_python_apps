@@ -3,7 +3,7 @@ from fileio import fileio
 
 custload=[]
 activecust=["",""]
-i=0
+
 class ExpBanking(Banking,fileio):
      
     def transfer(self,reciever,amount):
@@ -12,14 +12,8 @@ class ExpBanking(Banking,fileio):
 
 
     def userLoader(self,accno):
-        global custload
-        custload= ExpBanking.file_Reader()
-        print("\n\n\n ",custload)
-        print("\n\n",accno)
         
         i=0
-        print("\n\n printing i",i)
-        
         for item in custload:
             
             if accno in item :
@@ -32,15 +26,12 @@ class ExpBanking(Banking,fileio):
                 self.gender=item[3]
                 self.account=item[4]
                 self.balance=float(item[5])
-                ExpBanking.cust_Writer(custload)
-                break
+                
             i+=1
         
-        
+        ExpBanking.cust_Writer(custload)
         
     def accsearch(self,name,phone):
-        global custload
-        custload= ExpBanking.file_Reader()
         i=0
         for item in custload:
             if name in item and phone in item:
@@ -51,4 +42,4 @@ class ExpBanking(Banking,fileio):
                 
         
 
-
+custload= ExpBanking.file_Reader()
